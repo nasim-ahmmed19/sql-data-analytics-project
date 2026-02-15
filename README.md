@@ -14,7 +14,6 @@ This repository contains a collection of SQL scripts and case studies focused on
 
 ## 📂 Repository Structure
 * **`/Case-Studies`**: Specific business problems and their SQL solutions.
-* **`/Data-Cleaning`**: Scripts focused on handling NULLs, duplicates, and data formatting.
 * **`/Metrics`**: SQL queries for tracking business performance and growth.
 
 ## 💡 Projects Included
@@ -22,10 +21,6 @@ This repository contains a collection of SQL scripts and case studies focused on
 2.  **Customer Behavior Analysis:** Segmenting customers based on their purchase history and frequency.
 3.  **Inventory Management:** Tracking stock levels and predicting reorder points.
 
-## ⚙️ How to Use
-1. Clone the repository: `git clone https://github.com/your-username/sql-data-analytics-project.git`
-2. Navigate to the project folder.
-3. Run the `.sql` files in your preferred SQL environment (PostgreSQL, MySQL, SQL Server, etc.).
 
 ---
 
