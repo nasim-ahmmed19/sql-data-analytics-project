@@ -1,32 +1,40 @@
-# SQL Data Analytics Portfolio 📊
+# 📊 SQL Data Analytics Portfolio: End-to-End Medallion Architecture
 
-Welcome to my SQL Data Analytics repository! This project showcases my ability to extract, transform, and analyze data to solve real-world business problems using SQL.
+Welcome to my comprehensive SQL Data Analytics project. This repository demonstrates a complete data lifecycle—from database initialization and automated data loading to advanced analytical modeling and reporting using **SQL Server**.
 
 ## 🚀 Project Overview
-This repository contains a collection of SQL scripts and case studies focused on data-driven decision-making. From exploratory data analysis (EDA) to calculating complex business metrics, each project highlights different aspects of SQL expertise.
-
-## 🛠️ Key SQL Skills Demonstrated
-* **Advanced Joins:** Using Inner, Left, Right, and Full joins to combine multiple data sources.
-* **Window Functions:** Utilizing `RANK()`, `DENSE_RANK()`, and `ROW_NUMBER()` for ranking and trend analysis.
-* **CTEs & Subqueries:** Writing clean and modular code using Common Table Expressions.
-* **Data Aggregation:** Summarizing data with `GROUP BY` and `HAVING` clauses.
-* **Business Logic:** Calculating KPIs like Monthly Recurring Revenue (MRR), Churn Rate, and Customer Lifetime Value (CLV).
+This project showcases a structured workflow (Bronze to Gold) to transform raw e-commerce data into business-ready insights. By implementing high-performance SQL techniques, I've built a system that tracks customer behavior, product performance, and overall business growth.
 
 ## 📂 Repository Structure
-* **`/Case-Studies`**: Specific business problems and their SQL solutions.
-* **`/Metrics`**: SQL queries for tracking business performance and growth.
+* **/dataset**: Source CSV files used for the analysis.
+* **/scripts**:
+    * `01_init_database.sql`: Schema creation and automated **Bulk Insert** procedure with error handling.
+    * `02-05_exploration.sql`: Data profiling, health checks, and metadata exploration.
+    * `06-12_analytics.sql`: Advanced analysis including **YoY Growth, Cumulative Sales, Ranking, and Segmentation**.
+    * `13_report_customers.sql`: Gold-layer View for Customer Intelligence (Recency, Lifespan, VIP Status).
+    * `14_report_products.sql`: Gold-layer View for Product Performance (Profitability, Cost, Segmenting).
 
-## 💡 Projects Included
-1.  **Sales Performance Analysis:** Identifying top-performing products and sales trends over time.
-2.  **Customer Behavior Analysis:** Segmenting customers based on their purchase history and frequency.
-3.  **Inventory Management:** Tracking stock levels and predicting reorder points.
+## 💡 Key Business Insights Delivered
 
+### 👤 Customer Intelligence
+Developed a 360-degree customer view to track:
+- **RFM-based Segmentation**: Categorizing customers as **VIP, Regular, or New**.
+- **Customer Lifespan**: Measuring the duration from the first to the last order.
+- **Recency Analysis**: Identifying inactive customers based on months since their last order.
 
----
+### 📦 Product Performance
+Consolidated product metrics to identify:
+- **Profitability**: Calculating `total_profit` by subtracting `overall_cost` from `total_sales`.
+- **Performance Tiers**: High-performer, Mid-range, and Low-performer segments based on revenue.
+- **Sales Velocity**: Tracking average selling price and monthly revenue trends.
 
-### 👨‍💻 Author
-**MD. Nasim Ahmmed** Data Analyst  
+## 🛠️ Technical Skills Demonstrated
+- **Performance Optimization**: Improved query speed by over **10x** using **Clustered Columnstore Indexes**.
+- **Advanced SQL**: Expert use of CTEs, Window Functions (`RANK`, `LAG`, `SUM OVER`), and Stored Procedures.
+- **Robust Logic**: Implementation of `TRY...CATCH` for error handling and protection against "Division by Zero".
 
-Let's connect!  
-🔗 [LinkedIn Profile](https://www.linkedin.com/in/md-nasim-analyest19/)  
+## 👨‍💻 Author
+**MD. Nasim Ahmmed** *Data Analyst*
 
+Let's connect and discuss data!  
+[🔗 LinkedIn Profile](https://www.linkedin.com/in/md-nasim-analyest19/) | [📧 Email Me](mailto:nasimahmmed807@gmail.com)
