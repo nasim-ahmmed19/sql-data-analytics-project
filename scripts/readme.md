@@ -25,11 +25,28 @@ Before diving into the scripts, this project implements high-level optimization 
   <img src="../docs/1.png" width="500">
 </p>
 
-### 2️⃣ Phase 2: Exploratory Data Analysis (EDA)
-* **02 - 05_exploration.sql**: Auditing structure, checking constraints, and calculating foundational metrics like Total Sales and Customer Count.
 
-> **Output Preview:** > ![EDA Results](../docs/2.png) 
+### 2️⃣ Phase 2: Exploratory Data Analysis (EDA) & Measures
+This phase focuses on understanding the data structure, data health, and extracting foundational business metrics.
 
+* **`02 - 03_database_&_dimensions_exploration.sql`**: Audits the database schema and explores dimension tables.
+    * Inspects metadata using `INFORMATION_SCHEMA`.
+    * Analyzes distributions like customer counts by country and product counts by category.
+> **Output Preview:**
+<img src="../docs/2.pnd" width="300">
+<img src="../docs/3.pnd" width="300">
+
+* **`04_date_range_exploration.sql`**: Investigates the timeframe of the dataset.
+    * Calculates the lifespan of orders and customer age demographics using `DATEDIFF()`.
+    * Identifies data freshness and potential outliers in dates.
+> **Output Preview:**
+<img src="../docs/4.png" width="300">
+
+* **`05_measures_exploration.sql`**: Calculates the "Vital Signs" of the business.
+    * Developed a **Unified Key Metrics Report** using `UNION ALL` to display Total Sales (in Millions), Total Orders, and Customer Base in a single view.
+    * Highlights: Total Sales (M), Total Quantity, Avg Selling Price, and Unique Customer Count.
+> **Output Preview:**
+<img src="../docs/5.png" width="300">
 ### 3️⃣ Phase 3: Advanced Business Analytics
 * **06 - 09_analysis.sql**: Revenue drivers, Ranking, and Time-series analysis to track trends and Running Totals.
 * **10 - 12_performance_&_segmentation.sql**: **YoY Analysis** using `LAG()` and creating logical tiers (VIP, Regular, New) based on spending.
