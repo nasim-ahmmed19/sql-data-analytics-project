@@ -76,12 +76,28 @@ This phase moves into core Business Intelligence, where I analyze the magnitude 
 | :---: | :---: | :---: | :---: |
 | <img src="../docs/6.5.png" width="200"> | <img src="../docs/6.6.png" width="200"> | <img src="../docs/6.7.png" width="200"> | |
 
-### 4️⃣ Phase 4: Gold-Layer Reporting (Final Views)
-* **13_report_customers.sql**: Customer Intelligence (Recency, Avg Spend, Segment).
-* **14_report_products.sql**: Product Performance (Profitability, Cost, Sales Velocity).
+### 5️⃣ Phase 5: Advanced Ranking & Performance Optimization
+This phase demonstrates the transition from basic querying to advanced SQL engineering. I implemented complex ranking logic and significantly boosted query performance using indexing strategies.
 
-> **Output Preview:** > ![Final Gold Report](../docs/output_report.png) *(এখানে ফাইনাল ভিউ বা রিপোর্টের স্ক্রিনশট দিন)*
+* **`07_ranking_analysis.sql`**: Leveraging Window Functions for business intelligence.
+    * **Top & Bottom Performers**: Used `ROW_NUMBER()`, `RANK()`, and `DENSE_RANK()` to identify high-revenue products and laggards.
+    * **Customer Intelligence**: Ranked top 10 customers by revenue and identified those with the fewest orders for targeted marketing.
+    * **Optimization Journey**: Included a manual logic vs. optimized version. By implementing **Clustered Columnstore Indexes** and **Non-clustered Indexes**, I improved query execution speed by over **10x**.
+    * **Advanced Analytics**: Developed a Running Total (Cumulative Revenue) report per customer using `SUM() OVER(PARTITION BY... ORDER BY...)`.
 
+> **Output Preview: Performance & Ranking Insights**
+
+| 1. Top 5 Revenue Products | 2. Worst Performing Products | 3. Top 10 High-Value Customers |
+| :---: | :---: | :---: |
+| <img src="../docs/7.1.png" width="300"> | <img src="../docs/7.2.png" width="300"> | <img src="../docs/7.3.png" width="300"> |
+
+---
+
+### 💡 Notable Technical Achievement: Indexing for Speed
+To handle large datasets efficiently, I applied strategic indexing:
+* **Clustered Columnstore Index** on `fact_sales` for massive compression and faster scans.
+* **Non-clustered Indexes** on Foreign Keys (`customer_key`, `product_key`) to accelerate JOIN operations.
+* **Clustered Indexes** on Dimension tables to optimize data retrieval.
 ---
 
 ## 💡 Notable Technical Achievement
