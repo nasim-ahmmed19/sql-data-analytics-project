@@ -26,26 +26,37 @@ Before diving into the scripts, this project implements high-level optimization 
 </p>
 
 
-### 2️⃣ Phase 2: Exploratory Data Analysis (EDA) & Measures
-This phase focuses on understanding the data structure, data health, and extracting foundational business metrics.
+### 2️⃣ Phase 2: Structural Exploration & Data Quality Audit
+This phase is dedicated to understanding the technical foundation of the database and ensuring the integrity of the dimension tables.
 
-* **`02 - 03_database_&_dimensions_exploration.sql`**: Audits the database schema and explores dimension tables.
-    * Inspects metadata using `INFORMATION_SCHEMA`.
-    * Analyzes distributions like customer counts by country and product counts by category.
+* **`02_database_exploration.sql`**: Audits the entire database structure. It uses system views like `INFORMATION_SCHEMA.TABLES` and `COLUMNS` to verify data types, nullability, and schema constraints.
+* **`03_dimensions_exploration.sql`**: Performs a deep dive into the business entities.
+    * **Customer Demographics**: Analyzes customer distribution by country to identify key markets.
+    * **Product Categorization**: Audits the product catalog to ensure correct mapping of categories and subcategories.
 
 > **Output Preview:**
 <div style="display: flex; justify-content: space-between;">
-  <img src="../docs/2.png" width="350" />
-  <img src="../docs/3.png" width="350" />
+  <img src="../docs/2.png" width="400" />
+  <img src="../docs/3.png" width="400" />
 </div>
 
-* **`04 - 05_date_&_measures_exploration.sql`**: Investigates the timeframe and calculates the "Vital Signs" of the business.
-    * Developed a **Unified Key Metrics Report** using `UNION ALL` to display Total Sales, Orders, and Customer Base.
+---
+
+### 3️⃣ Phase 3: Date Range Profiling & Key Business Measures
+In this phase, I transitioned from structural audit to behavioral analysis, identifying the timeframe of the data and calculating the core "Vital Signs" of the business.
+
+* **`04_date_range_exploration.sql`**: Focuses on the temporal aspect of the data.
+    * **Order Lifecycle**: Calculates the months of data available and identifies the first and last transaction dates.
+    * **Customer Demographics**: Analyzes the age range of the customer base using `DATEDIFF()` on birthdates to understand target audience maturity.
+* **`05_measures_exploration.sql`**: The "Executive Summary" script.
+    * **Unified Metrics**: I developed a consolidated report using `UNION ALL` that presents **Total Sales (in Millions)**, **Total Order Volume**, and **Active Customer Base** in a single high-level view.
+    * **Averages & Totals**: Calculates critical KPIs like Average Selling Price and total quantity sold to establish a performance baseline.
 
 > **Output Preview:**
-| Date Range Analysis | Key Metrics Report |
-| :---: | :---: |
-| <img src="../docs/4.png" width="500"> | <img src="../docs/5.png" width="500"> |
+<div style="display: flex; justify-content: space-between;">
+  <img src="../docs/4.png" width="400" />
+  <img src="../docs/5.png" width="400" />
+</div>
 
 ### 3️⃣ Phase 3: Advanced Business Analytics
 * **06 - 09_analysis.sql**: Revenue drivers, Ranking, and Time-series analysis to track trends and Running Totals.
