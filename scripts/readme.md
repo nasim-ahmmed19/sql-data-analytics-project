@@ -118,6 +118,22 @@ This phase focuses on tracking business performance over time, identifying seaso
 | <img src="../docs/9,3.png" width="350"> | <img src="../docs/10.png" width="350"> |
 
 </div>
+
+### 7️⃣ Phase 7: Data Segmentation & Part-to-Whole Analysis
+This phase focuses on dividing the data into strategic groups to uncover hidden patterns and evaluate how individual categories contribute to the overall business success.
+
+* **`11_data_segmentation_analysis.sql`**: Categorizes entities based on custom business logic using `CASE` statements.
+    * **Product Cost Segmentation**: Grouped products into price tiers (Below 100, 100-500, etc.) to understand inventory distribution.
+    * **Customer Behavior Segmentation**: Developed a complex logic to classify customers into **VIP**, **Regular**, and **New** based on their spending history and lifespan.
+* **`12_part_to_whole_analysis.sql`**: Analyzes the contribution of individual segments to the total.
+    * **Revenue Contribution**: Calculated the percentage of total sales for each product category using **Window Functions** (`SUM() OVER()`).
+    * **Impact Visualization**: Identified that the 'Bikes' category contributes over **96%** of total revenue, highlighting the core business driver.
+
+> **Output Preview: Strategic Segmentation Insights**
+
+| 1. Product Cost Segments | 2. Customer Spending Segments | 3. Category Sales Percentage |
+| :---: | :---: | :---: |
+| <img src="../docs/11.1.png" width="300"> | <img src="../docs/11.2.png" width="300"> | <img src="../docs/12.png" width="300"> |
 ---
 
 ### 💡 Notable Technical Achievement: Indexing for Speed
