@@ -7,7 +7,7 @@ Welcome to my SQL Data Analytics project. This repository is built on a structur
 ## 🗺️ Project Roadmap
 | 1. Project Roadmap|
 | :---: |
-| <img src="/docs/MD.Nasim Ahmmed(1).png" width="1200"> |
+| <img src="/docs/MD.Nasim Ahmmed(1).png" width="1200" height="600"> |
 
 ---
 
@@ -23,9 +23,9 @@ To ensure enterprise-grade analytics, I implemented advanced SQL optimization te
 ---
 
 ## 📑 Analytical Workflow Highlights
-| 1. Project|
+| 1. Analytical Workflow Highlights |
 | :---: |
-| <img src="/docs/chart.png" width="1200"> |
+| <img src="docs/chart.png" width="1200" height="600"> |
 
 ---
 
