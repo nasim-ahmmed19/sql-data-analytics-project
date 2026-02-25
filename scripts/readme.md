@@ -68,36 +68,13 @@ This phase moves into core Business Intelligence, where I analyze the magnitude 
 
 > **Output Preview: Strategic Business Insights**
 
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
-  <div style="width: 48%; margin-bottom: 10px;">
-    <p align="center"><b>1. Customers by Country</b></p>
-    <img src="../docs/6.1.png" style="width: 100%;" />
-  </div>
-  <div style="width: 48%; margin-bottom: 10px;">
-    <p align="center"><b>2. Customers by Gender</b></p>
-    <img src="../docs/6.2.png" style="width: 100%;" />
-  </div>
-  <div style="width: 48%; margin-bottom: 10px;">
-    <p align="center"><b>3. Products by Category</b></p>
-    <img src="../docs/6.3.png" style="width: 100%;" />
-  </div>
-  <div style="width: 48%; margin-bottom: 10px;">
-    <p align="center"><b>4. Category Avg Costs</b></p>
-    <img src="../docs/6.4.png" style="width: 100%;" />
-  </div>
-  <div style="width: 48%; margin-bottom: 10px;">
-    <p align="center"><b>5. Revenue by Category</b></p>
-    <img src="../docs/6.5.png" style="width: 100%;" />
-  </div>
-  <div style="width: 48%; margin-bottom: 10px;">
-    <p align="center"><b>6. Revenue by Customer</b></p>
-    <img src="../docs/6.6.png" style="width: 100%;" />
-  </div>
-  <div style="width: 48%; margin-bottom: 10px;">
-    <p align="center"><b>7. Sold Items Distribution</b></p>
-    <img src="../docs/6.7.png" style="width: 100%;" />
-  </div>
-</div>
+| 1. Customers by Country | 2. Customers by Gender | 3. Products by Category | 4. Category Avg Costs |
+| :---: | :---: | :---: | :---: |
+| <img src="../docs/6.1.png" width="200"> | <img src="../docs/6.2.png" width="200"> | <img src="../docs/6.3.png" width="200"> | <img src="../docs/6.4.png" width="200"> |
+
+| 5. Revenue by Category | 6. Revenue by Customer | 7. Sold Items Distribution | |
+| :---: | :---: | :---: | :---: |
+| <img src="../docs/6.5.png" width="200"> | <img src="../docs/6.6.png" width="200"> | <img src="../docs/6.7.png" width="200"> | |
 
 ### 4️⃣ Phase 4: Gold-Layer Reporting (Final Views)
 * **13_report_customers.sql**: Customer Intelligence (Recency, Avg Spend, Segment).
