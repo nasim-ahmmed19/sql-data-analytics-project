@@ -5,6 +5,11 @@ Welcome to my comprehensive SQL Data Analytics project. This repository demonstr
 ## 🚀 Project Overview
 This project showcases a structured workflow (Bronze to Gold) to transform raw e-commerce data into business-ready insights. By implementing high-performance SQL techniques, I've built a system that tracks customer behavior, product performance, and overall business growth.
 
+### 🗺️ Project Roadmap
+<p align="center">
+  <img src="docs/MD.Nasim%20Ahmmed(1).png" alt="SQL Data Analytics Roadmap" width="900">
+</p>
+
 ## 📂 Repository Structure
 * **/dataset**: Source CSV files used for the analysis.
 * **/scripts**:
