@@ -34,11 +34,10 @@ This phase focuses on understanding the data structure, data health, and extract
     * Analyzes distributions like customer counts by country and product counts by category.
 
 > **Output Preview:**
-<p align="left">
-  <img src="../docs/2.png" width="500" />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="../docs/3.png" width="500" />
-</p>
+<div style="display: flex; justify-content: space-between;">
+  <img src="../docs/2.png" width="350" />
+  <img src="../docs/3.png" width="350" />
+</div>
 
 * **`04 - 05_date_&_measures_exploration.sql`**: Investigates the timeframe and calculates the "Vital Signs" of the business.
     * Developed a **Unified Key Metrics Report** using `UNION ALL` to display Total Sales, Orders, and Customer Base.
