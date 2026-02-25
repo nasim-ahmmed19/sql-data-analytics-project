@@ -10,12 +10,14 @@ SQL Functions Used:
     - COUNT(), SUM(), AVG()
 ===============================================================================
 */
+use DataWarehouseAnalytics
+
 --Find the total sales
 select concat(round(sum(CAST(sales_amount AS FLOAT))/1000000,2),' M')
 as total_sales from gold.fact_sales
 
 --Find how many items are sold
-select sum(qunatity) as total_quantity from gold.fact_sales
+select sum(quantity) as total_quantity from gold.fact_sales
 
 --Find the avarage selling price
 select avg(sales_amount) as avg_selling_price from gold.fact_sales
@@ -36,7 +38,7 @@ SELECT COUNT(DISTINCT customer_key) AS total_customers FROM gold.fact_sales;
 -- Generate a Report that shows all key metrics of the business
 select 'Total_sales' as measure_name,sum(sales_amount) as measure_value from gold.fact_sales
 union all
-select 'Total quantity',sum(qunatity) from gold.fact_sales
+select 'Total quantity',sum(quantity) from gold.fact_sales
 union all
 select 'Avg Seales',avg(sales_amount) from gold.fact_sales
 union all 
