@@ -13,50 +13,53 @@ Before diving into the scripts, this project implements high-level optimization 
 ## 🚀 Script Execution Guide
 
 ### 1️⃣ Phase 1: Infrastructure & Data Loading
-* **`01_init_database.sql`**: This script serves as the backbone of the project, responsible for database creation and schema definition.
-* **Automated Data Pipeline**: It features a robust **Stored Procedure** (`gold.data_load`) designed for high-performance data ingestion:
-    * **Dynamic Truncation**: Automatically clears existing data to ensure a fresh load every time.
-    * **High-Speed Ingestion**: Utilizes the **BULK INSERT** command to load thousands of records from CSV files in milliseconds.
-    * **Audit & Logging**: Prints detailed execution logs, including the number of rows processed and the time taken for each table.
-    * **Error Resilience**: Implemented with a `TRY...CATCH` block to capture and display descriptive error messages (Error Number, State, and Message) in case of failures.
+This phase serves as the backbone of the project, focusing on database creation, schema definition, and building an automated ingestion pipeline.
 
-> **Output Preview:**
-<p align="left">
-  <img src="../docs/1.png" width="500">
-</p>
+* **`01_init_database.sql`**: Responsible for the core setup of the environment.
+* **Automated Data Pipeline**: Features a robust **Stored Procedure** (`gold.data_load`) designed for high-performance data ingestion:
+    * **Dynamic Truncation**: Ensures a fresh data load by clearing existing records.
+    * **High-Speed Ingestion**: Utilizes **BULK INSERT** to load thousands of records in milliseconds.
+    * **Audit & Resilience**: Includes detailed execution logging and `TRY...CATCH` error handling for reliability.
 
+> **Output Preview: Automated Data Ingestion**
+
+| 1. Data Loading Process (Bulk Ingest) |
+| :---: |
+| <img src="../docs/1.png" width="600"> |
+
+---
 
 ### 2️⃣ Phase 2: Structural Exploration & Data Quality Audit
 This phase is dedicated to understanding the technical foundation of the database and ensuring the integrity of the dimension tables.
 
-* **`02_database_exploration.sql`**: Audits the entire database structure. It uses system views like `INFORMATION_SCHEMA.TABLES` and `COLUMNS` to verify data types, nullability, and schema constraints.
-* **`03_dimensions_exploration.sql`**: Performs a deep dive into the business entities.
-    * **Customer Demographics**: Analyzes customer distribution by country to identify key markets.
-    * **Product Categorization**: Audits the product catalog to ensure correct mapping of categories and subcategories.
+* **`02_database_exploration.sql`**: Audits the entire structure using `INFORMATION_SCHEMA` to verify data types and schema constraints.
+* **`03_dimensions_exploration.sql`**: Performs a deep dive into business entities:
+    * **Customer Demographics**: Analyzes distribution by country to identify key markets.
+    * **Product Categorization**: Ensures correct mapping of categories and subcategories.
 
-> **Output Preview:**
-<div style="display: flex; justify-content: space-between;">
-  <img src="../docs/2.png" width="400" />
-  <img src="../docs/3.png" width="400" />
-</div>
+> **Output Preview: Database & Dimension Audit**
+
+| 1. Database Schema Exploration | 2. Dimensions Distribution |
+| :---: | :---: |
+| <img src="../docs/2.png" width="450"> | <img src="../docs/3.png" width="450"> |
 
 ---
 
 ### 3️⃣ Phase 3: Date Range Profiling & Key Business Measures
-In this phase, I transitioned from structural audit to behavioral analysis, identifying the timeframe of the data and calculating the core "Vital Signs" of the business.
+Transitioning from structural audit to behavioral analysis, this phase calculates the core "Vital Signs" of the business.
 
 * **`04_date_range_exploration.sql`**: Focuses on the temporal aspect of the data.
-    * **Order Lifecycle**: Calculates the months of data available and identifies the first and last transaction dates.
-    * **Customer Demographics**: Analyzes the age range of the customer base using `DATEDIFF()` on birthdates to understand target audience maturity.
+    * **Order Lifecycle**: Calculates transaction timeframes and order durations.
+    * **Customer Maturity**: Analyzes age ranges using `DATEDIFF()` on birthdates.
 * **`05_measures_exploration.sql`**: The "Executive Summary" script.
-    * **Unified Metrics**: I developed a consolidated report using `UNION ALL` that presents **Total Sales (in Millions)**, **Total Order Volume**, and **Active Customer Base** in a single high-level view.
-    * **Averages & Totals**: Calculates critical KPIs like Average Selling Price and total quantity sold to establish a performance baseline.
+    * **Unified Metrics**: Uses `UNION ALL` to present **Total Sales**, **Order Volume**, and **Active Customers** in one view.
+    * **Performance Baseline**: Calculates critical KPIs like Average Selling Price.
 
-> **Output Preview:**
-<div style="display: flex; justify-content: space-between;">
-  <img src="../docs/4.png" width="400" />
-  <img src="../docs/5.png" width="400" />
-</div>
+> **Output Preview: Timeframe & KPI Insights**
+
+| 1. Date Range & Age Profiling | 2. Key Business Measures (KPIs) |
+| :---: | :---: |
+| <img src="../docs/4.png" width="450"> | <img src="../docs/5.png" width="450"> |
 
 ### 4️⃣ Phase 4: Magnitude & Distribution Analysis
 This phase moves into core Business Intelligence, where I analyze the magnitude of sales and customer distributions across different business dimensions.
