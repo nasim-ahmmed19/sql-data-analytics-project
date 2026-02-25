@@ -142,7 +142,7 @@ This phase focuses on tracking business performance over time, identifying seaso
 
 | 4. YoY Cumulative Sum | 5. YoY Performance Benchmarking |
 | :---: | :---: |
-| <img src="../docs/9.3.png" width="350"> | <img src="../docs/10.png" width="350"> |
+| <img src="../docs/9,3.png" width="350"> | <img src="../docs/10.png" width="350"> |
 
 </div>
 
