@@ -13,9 +13,15 @@ Before diving into the scripts, this project implements high-level optimization 
 ## 🚀 Script Execution Guide
 
 ### 1️⃣ Phase 1: Infrastructure & Data Loading
-* **01_init_database.sql**: Creates the database and gold schema. Automates data ingestion using **BULK INSERT** with `TRY...CATCH` error handling.
-  
-> **Output Preview:** > ![Data Loading Output](../docs/1.png) 
+* **`01_init_database.sql`**: This script serves as the backbone of the project, responsible for database creation and schema definition.
+* **Automated Data Pipeline**: It features a robust **Stored Procedure** (`gold.data_load`) designed for high-performance data ingestion:
+    * **Dynamic Truncation**: Automatically clears existing data to ensure a fresh load every time.
+    * **High-Speed Ingestion**: Utilizes the **BULK INSERT** command to load thousands of records from CSV files in milliseconds.
+    * **Audit & Logging**: Prints detailed execution logs, including the number of rows processed and the time taken for each table.
+    * **Error Resilience**: Implemented with a `TRY...CATCH` block to capture and display descriptive error messages (Error Number, State, and Message) in case of failures.
+
+> **Output Preview:**
+ ![Data Loading Output](../docs/1.png) 
 
 ### 2️⃣ Phase 2: Exploratory Data Analysis (EDA)
 * **02 - 05_exploration.sql**: Auditing structure, checking constraints, and calculating foundational metrics like Total Sales and Customer Count.
