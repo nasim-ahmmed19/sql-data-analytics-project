@@ -91,6 +91,33 @@ This phase demonstrates the transition from basic querying to advanced SQL engin
 | :---: | :---: | :---: |
 | <img src="../docs/7.1.png" width="300"> | <img src="../docs/7.2.png" width="300"> | <img src="../docs/7.3.png" width="300"> |
 
+
+### 6️⃣ Phase 6: Time-Series & Cumulative Growth Analysis
+This phase focuses on tracking business performance over time, identifying seasonal trends, and calculating cumulative growth metrics to understand long-term success.
+
+* **`08_change_over_time_analysis.sql`**: Tracks key metrics (Revenue, Customers, Quantity) across different time grains.
+    * Used **CTEs** for efficient monthly aggregations.
+    * Identified seasonality and peak sales periods to support inventory planning.
+* **`09_cumulative_analysis.sql`**: Measures the total business value built over time.
+    * Implemented **Running Totals** using `SUM() OVER(ORDER BY...)` to visualize year-over-year and month-over-month growth.
+    * Analyzed cumulative revenue flow across all years to identify core growth momentum.
+* **`10_performance_analysis.sql`**: Comparative benchmarking for products and sales.
+    * Used **Advanced Window Functions** like `LAG()` to compare current sales with the previous year (YoY Analysis).
+    * Implemented `CASE` statements to categorize performance as 'Above Avg', 'Increase', or 'Decrease', providing clear executive insights.
+
+> **Output Preview: Growth & Trend Insights**
+
+| 1. Monthly Sales Trend | 2. Cumulative Revenue (Year/Month) | 3. Cumulative Growth (All Years) |
+| :---: | :---: | :---: |
+| <img src="../docs/8.1.png" width="280"> | <img src="../docs/9.1.png" width="280"> | <img src="../docs/9.2.png" width="280"> |
+
+<div align="center">
+
+| 4. YoY Cumulative Sum | 5. YoY Performance Benchmarking |
+| :---: | :---: |
+| <img src="../docs/9.3.png" width="350"> | <img src="../docs/10.png" width="350"> |
+
+</div>
 ---
 
 ### 💡 Notable Technical Achievement: Indexing for Speed
