@@ -58,11 +58,47 @@ In this phase, I transitioned from structural audit to behavioral analysis, iden
   <img src="../docs/5.png" width="400" />
 </div>
 
-### 3️⃣ Phase 3: Advanced Business Analytics
-* **06 - 09_analysis.sql**: Revenue drivers, Ranking, and Time-series analysis to track trends and Running Totals.
-* **10 - 12_performance_&_segmentation.sql**: **YoY Analysis** using `LAG()` and creating logical tiers (VIP, Regular, New) based on spending.
+### 4️⃣ Phase 4: Magnitude & Distribution Analysis
+This phase moves into core Business Intelligence, where I analyze the magnitude of sales and customer distributions across different business dimensions.
 
-> **Output Preview:** > ![Advanced Analytics](../docs/output_analytics.png) *(এখানে র‍্যাঙ্কিং বা সেগমেন্টেশনের স্ক্রিনশট দিন)*
+* **`06_magnitude_analysis.sql`**: Quantifies the business impact by grouping data into meaningful segments.
+    * **Market Segmentation**: Analyzes total customer base and product volume by country and gender.
+    * **Financial Impact**: Calculates total revenue and average costs per category to identify high-value sectors.
+    * **Cross-Functional Joins**: Integrates `fact_sales` with `dim_customers` and `dim_products` to track revenue and sales velocity by region and product line.
+
+> **Output Preview: Strategic Business Insights**
+
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px;">
+  <div style="width: 32%;">
+    <p align="center"><b>1. Customers by Country</b></p>
+    <img src="../docs/6.1.png" style="width: 100%;" />
+  </div>
+  <div style="width: 32%;">
+    <p align="center"><b>2. Customers by Gender</b></p>
+    <img src="../docs/6.2.png" style="width: 100%;" />
+  </div>
+  <div style="width: 32%;">
+    <p align="center"><b>3. Products by Category</b></p>
+    <img src="../docs/6.3.png" style="width: 100%;" />
+  </div>
+  <div style="width: 32%;">
+    <p align="center"><b>4. Category Avg Costs</b></p>
+    <img src="../docs/6.4.png" style="width: 100%;" />
+  </div>
+  <div style="width: 32%;">
+    <p align="center"><b>5. Revenue by Category</b></p>
+    <img src="../docs/6.5.png" style="width: 100%;" />
+  </div>
+  <div style="width: 32%;">
+    <p align="center"><b>6. Revenue by Customer</b></p>
+    <img src="../docs/6.6.png" style="width: 100%;" />
+  </div>
+</div>
+
+<div style="margin-top: 15px;">
+  <p align="center"><b>7. Distribution of Sold Items Across Countries</b></p>
+  <p align="center"><img src="../docs/6.7.png" width="500" /></p>
+</div>
 
 ### 4️⃣ Phase 4: Gold-Layer Reporting (Final Views)
 * **13_report_customers.sql**: Customer Intelligence (Recency, Avg Spend, Segment).
