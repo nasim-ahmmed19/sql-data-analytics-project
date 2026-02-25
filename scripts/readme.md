@@ -21,7 +21,9 @@ Before diving into the scripts, this project implements high-level optimization 
     * **Error Resilience**: Implemented with a `TRY...CATCH` block to capture and display descriptive error messages (Error Number, State, and Message) in case of failures.
 
 > **Output Preview:**
- ![Data Loading Output](../docs/1.png) 
+<p align="left">
+  <img src="../docs/1.png" width="500">
+</p>
 
 ### 2️⃣ Phase 2: Exploratory Data Analysis (EDA)
 * **02 - 05_exploration.sql**: Auditing structure, checking constraints, and calculating foundational metrics like Total Sales and Customer Count.
