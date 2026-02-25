@@ -134,6 +134,25 @@ This phase focuses on dividing the data into strategic groups to uncover hidden 
 | 1. Product Cost Segments | 2. Customer Spending Segments | 3. Category Sales Percentage |
 | :---: | :---: | :---: |
 | <img src="../docs/11.1.png" width="300"> | <img src="../docs/11.2.png" width="300"> | <img src="../docs/12.png" width="300"> |
+
+
+### 8️⃣ Phase 8: Final Report Generation (Gold Layer)
+This is the final stage where I consolidated all previous insights into two comprehensive, high-value business reports. These reports are designed to provide decision-makers with a 360-degree view of customers and products.
+
+* **`13_customer_report.sql`**: A consolidated view of customer behavior and value.
+    * **Key Metrics**: Analyzed total orders, lifetime sales, and average monthly spend.
+    * **KPIs & Segmentation**: Calculated **Recency** (months since last order) and segmented customers into **VIP**, **Regular**, and **New** tiers.
+    * **Demographic Insights**: Integrated age groups and geographic data for targeted marketing analysis.
+* **`14_product_report.sql`**: A deep dive into product performance and profitability.
+    * **Performance Tiers**: Classified products as **High-performer**, **Mid-Range**, or **Low-performer** based on revenue.
+    * **Profitability Analysis**: Calculated **Total Profit** by comparing revenue against overall cost (`total_sales - overall_cost`).
+    * **Sales Velocity**: Measured Average Selling Price (ASP) and Monthly Revenue trends to identify top-selling items.
+
+> **Output Preview: Final Business Reports**
+
+| 1. Integrated Customer Report | 2. Integrated Product Report |
+| :---: | :---: |
+| <img src="../docs/13.png" width="450"> | <img src="../docs/14.png" width="450"> |
 ---
 
 ### 💡 Notable Technical Achievement: Indexing for Speed
@@ -144,6 +163,6 @@ To handle large datasets efficiently, I applied strategic indexing:
 ---
 
 ## 💡 Notable Technical Achievement
-In script **#07**, you will find a comparison between manual logic and optimized versions. This demonstrates the evolution of query writing—from basic problem-solving to high-performance, industry-standard SQL.
+In scripts you will find a comparison between manual logic and optimized versions. This demonstrates the evolution of query writing—from basic problem-solving to high-performance, industry-standard SQL.
 
 **Developed by:** [MD. Nasim Ahmmed](https://www.linkedin.com/in/md-nasim-analyest19/)
