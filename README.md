@@ -62,6 +62,8 @@ For a deep dive into each analytical phase, please visit the [**Scripts Library*
 
 ## 💡 Final Master Business Intelligence Insights
 
+📊 **Explore In-Depth Analysis:** For a complete strategic breakdown of each dashboard, please visit the [**Dashboard Analysis Library**](./dashboard).
+
 ### 📊 1. Overview Dashboard: The Financial Backbone (Executive Summary)
 | 1. Overview Dashboard |
 | :---: |
