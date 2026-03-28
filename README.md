@@ -1,4 +1,5 @@
 # 📊 SQL & Tableau Data Analytics Portfolio: Strategic Business Intelligence (2022 - 2026)
+**Welcome to the SQL & Tableau Analytics repository!** This project transforms complex data from a modern warehouse into actionable business strategies, focusing on revenue optimization, customer retention, and interactive executive reporting.
 
 **Author:** Nasim Ahmed (Lead Data Analyst)  
 **Tools:** SQL Server (Medallion Architecture), Tableau & Python  
