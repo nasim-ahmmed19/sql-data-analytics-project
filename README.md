@@ -5,6 +5,9 @@
 **🔗 Live Interactive Dashboards:** [Explore My Analysis on Tableau Public](https://public.tableau.com/app/profile/md.nasim.ahmmed/viz/sqlanalytictableauprojct/overview?publish=yes)
 
 ---
+> 🏗️ **Technical Backend:** The insights and dashboards in this project are built upon a modern Data Warehouse (Medallion Architecture). To explore the ETL pipelines and SQL modeling, visit the [**SQL Data Warehouse Project**](https://github.com/nasim-ahmmed19/sql-data-warehouse-project).
+
+---
 
 ## 🗺️ Project Roadmap
 | 1. Project Roadmap |
