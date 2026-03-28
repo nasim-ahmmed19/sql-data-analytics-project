@@ -25,7 +25,7 @@ To ensure enterprise-grade analytics, I implemented advanced SQL optimization te
 ## 📑 Analytical Workflow Highlights
 | 1. Analytical Workflow Highlights |
 | :---: |
-| <img src="docs/chart.png" width="1200" height="600"> |
+| <img src="docs/analytics.png" width="1200" height="600"> |
 
 ---
 
