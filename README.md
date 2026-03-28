@@ -65,6 +65,9 @@ For a deep dive into each analytical phase, please visit the [**Scripts Library*
 ---
 
 ## 📊 1. Overview Dashboard: The Financial Backbone (Executive Summary)
+| 1. Overview Dashboard |
+| :---: |
+| <img src="dashboard/overview.png" width="1200" height="600"> |
 
 Our business is currently in an **"Exponential Growth Phase,"** signaling massive future expansion.
 
