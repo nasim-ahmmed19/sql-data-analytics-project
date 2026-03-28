@@ -1,4 +1,4 @@
-# 📊 SQL Data Analytics Portfolio: Strategic Business Intelligence
+# 📊 SQL & Tableau Data Analytics Portfolio: Strategic Business Intelligence
 
 Welcome to my SQL Data Analytics project. This repository is built on a structured Data Warehouse environment where I transform Gold-layer tables into high-value business insights. The project focuses on the analytical journey—from data exploration and auditing to advanced performance analysis and automated reporting.
 
