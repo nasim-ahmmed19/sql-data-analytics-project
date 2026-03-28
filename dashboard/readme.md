@@ -3,10 +3,10 @@
 This folder contains the interactive dashboards and detailed analytical reports for the project. Below is the full documentation for each dashboard, including business insights, problem-solving strategies, and analyst recommendations.
 
 ---
-
-## 1. 📊 Executive Business Performance Report (2022 - 2026)
 **Prepared by:** MD. Nasim Ahmmed (Data Analyst)  
 **Tools:** SQL Server (Medallion Architecture) & Tableau
+---
+## 1. 📊 Executive Business Performance Report (2022 - 2026)
 
 | Executive Overview |
 | :---: |
@@ -63,8 +63,6 @@ Despite having 295 products, our revenue follows the "Pareto Principle (80/20 Ru
 ---
 
 ## 2. 📈 Product Profitability & Efficiency Analysis Report
-**Prepared by:** MD. Nasim Ahmmed (Data Analyst)  
-**Reporting Period:** 2022 - 2025 (with 2026 Context)
 
 | Product & Inventory |
 | :---: |
@@ -113,8 +111,6 @@ We use a specialized model to monitor the health of each product:
 ---
 
 ## 3. 👥 Customer Segmentation & Retention Analysis Report
-**Prepared by:** MD. Nasim Ahmmed (Data Analyst)  
-**Focus:** Customer Loyalty, Revenue Optimization, and Churn Prevention
 
 | Customer Intelligence |
 | :---: |
