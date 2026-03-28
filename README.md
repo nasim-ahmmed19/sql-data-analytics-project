@@ -82,6 +82,9 @@ Our business is currently in an **"Exponential Growth Phase,"** signaling massiv
 ---
 
 ## 🛒 2. Product Dashboard: Inventory & Profit Efficiency
+| 2. Product Dashboard |
+| :---: |
+| <img src="dashboard/product dashboard.png" width="1200" height="600"> |
 
 Analysis of 295 products clearly reflects the **80/20 Rule (Pareto Principle):**
 
@@ -102,6 +105,9 @@ Analysis of 295 products clearly reflects the **80/20 Rule (Pareto Principle):**
 ---
 
 ## 👥 3. Customer Dashboard: Demographics & Loyalty
+| 3. Customer Dashboard |
+| :---: |
+| <img src="dashboard/CUSTOMERS.png" width="1200" height="600"> |
 
 Our **18,484 customers** are the primary drivers of future growth:
 
